@@ -3,9 +3,9 @@
 *
 * Date atual; 
 *
-* string dia = atual.day();
-* string mes = atual.month();
-* string ano = atual.year();
+* int dia = atual.day();
+* int mes = atual.month();
+* int ano = atual.year();
 *
 * cout << "O dia de hoje é: " << dia << "/" << mes << "/" << ano << endl;
 */
@@ -24,12 +24,12 @@ class Date {
     public:
         string now();
         string week();
-        string day();
-        string month();
-        string year();
-        string hours();
-        string minutes();
-        string seconds();
+        int day();
+        int month();
+        int year();
+        int hours();
+        int minutes();
+        int seconds();
     private:
         static time_t atual;
         static string semana[7];

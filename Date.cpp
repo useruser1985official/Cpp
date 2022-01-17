@@ -22,26 +22,26 @@ string Date::week() {
     return semana[ds];
 }
 
-string Date::day() {
-    return this->manip(2, "%d");
+int Date::day() {
+    return atoi(this->manip(2, "%d").c_str());
 }
 
-string Date::month() {
-    return this->manip(2, "%m");
+int Date::month() {
+    return atoi(this->manip(2, "%m").c_str());
 }
 
-string Date::year() {
-    return this->manip(4, "%Y");
+int Date::year() {
+    return atoi(this->manip(4, "%Y").c_str());
 }
 
-string Date::hours() {
-    return this->manip(2, "%H");
+int Date::hours() {
+    return atoi(this->manip(2, "%H").c_str());
 }
 
-string Date::minutes() {
-    return this->manip(2, "%M");
+int Date::minutes() {
+    return atoi(this->manip(2, "%M").c_str());
 }
 
-string Date::seconds() {
-    return this->manip(2, "%S");
+int Date::seconds() {
+    return atoi(this->manip(2, "%S").c_str());
 }
