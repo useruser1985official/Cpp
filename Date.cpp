@@ -23,25 +23,25 @@ string Date::week() {
 }
 
 int Date::day() {
-    return atoi(this->manip(2, "%d").c_str());
+    return stoi(this->manip(2, "%d"));
 }
 
 int Date::month() {
-    return atoi(this->manip(2, "%m").c_str());
+    return stoi(this->manip(2, "%m"));
 }
 
 int Date::year() {
-    return atoi(this->manip(4, "%Y").c_str());
+    return stoi(this->manip(4, "%Y"));
 }
 
 int Date::hours() {
-    return atoi(this->manip(2, "%H").c_str());
+    return stoi(this->manip(2, "%H"));
 }
 
 int Date::minutes() {
-    return atoi(this->manip(2, "%M").c_str());
+    return stoi(this->manip(2, "%M"));
 }
 
 int Date::seconds() {
-    return atoi(this->manip(2, "%S").c_str());
+    return stoi(this->manip(2, "%S"));
 }
